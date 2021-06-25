@@ -2,7 +2,6 @@ var grid = 50;
 var width = 1366;
 var carGroup1,logGroup1;
 var grassHeight = 100;
-//var player;
 var carAnimation, logAnimation, playerAnimation;
 var school;
 function preload()
