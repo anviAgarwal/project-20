@@ -54,21 +54,20 @@ if (carGroup1[i].x>width){
     carGroup1[i].x=0;
 }
 }   
-
-  
+if (keyDown("Right")){
+  player.moveRight();
+}
+if (keyDown("Left")){
+  player.moveLeft();
+}
+if (keyDown("Up")){
+  player.moveUp();
+}
+if (keyDown("Down")){
+  player.moveDown();
+}
  
 
   drawSprites();
 
-}
-function keyPressed(){
-  if(keyCode == UP_ARROW){
-   player.move(0,-2);
-  }else if(keyCode ==DOWN_ARROW){
-    player.move(0,2);
-  }else if(keyCode == LEFT_ARROW){
-   player.move(-2,0);
-  }else if(keyCode == RIGHT_ARROW){
-    player.move(2,0);
-  }
 }
