@@ -7,7 +7,7 @@ class Player {
     }
         move(xdir,ydir){
            this.spt.x+=xdir*grid;
-            this.spt.y+=xdir*grid;
+            this.spt.y+=ydir*grid;
         }
       // bottomGrassdepth=carGroup1.depth;
     }
