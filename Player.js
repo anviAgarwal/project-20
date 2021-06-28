@@ -9,7 +9,7 @@ class Player {
            this.spt.x+=xdir*grid;
             this.spt.y+=xdir*grid;
         }
-       
+      // bottomGrassdepth=carGroup1.depth;
     }
        
     

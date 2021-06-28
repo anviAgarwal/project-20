@@ -1,3 +1,4 @@
+var player;
 var grid = 50;
 var width = 1366;
 var carGroup1,logGroup1;
@@ -11,12 +12,13 @@ function preload()
 
 function setup() {
   createCanvas(1766,900);
+  
   carGroup1 = new Group();
   logGroup1 = new Group();
   
   for (var i=0;i<6;i++) {
     var bottomGrass1 = createSprite(883,height-50-(i*400),width,grassHeight);
-    player=new Player(width/2,height-25);
+    
   if (i%2===0){
   var road=createSprite(883,height-150-(i*400)-grassHeight,width,300)
   road.shapeColor="black";
@@ -31,7 +33,7 @@ for (var i =0;i<40;i++) {
   log=new Log (-2);
   logGroup1.add(log.spt);
 }
-  
+player=new Player(width/2,height-75);
 }
 function draw() {
   background("lightblue");
@@ -54,8 +56,8 @@ if (carGroup1[i].x>width){
     carGroup1[i].x=0;
 }
 }   
-
- 
+//bottomGrass1.depth=player.depth
+ //player.depth=player.depth+1;
 
   drawSprites();
 
